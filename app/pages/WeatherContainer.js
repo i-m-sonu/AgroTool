@@ -2,12 +2,6 @@
 import React from "react";
 
 const WeatherContainer = ({ data }) => {
-  if (data.length === 0) {
-    return <p>No data available for the entered location.</p>;
-  }
-  
-
-  // Calculate average temperature and find the most frequently occurring condition
   const avgTemperature = Math.floor(data.reduce((sum, val) => sum + val.temperature_celsius, 0) / data.length);
 
   const conditionCounts = data.reduce((counts, val) => {

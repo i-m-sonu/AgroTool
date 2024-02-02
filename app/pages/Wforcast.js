@@ -21,14 +21,14 @@ const Wforcast = () => {
   };
 
   const fetchData = () => {
-    // Filter data based on the entered value
+    
     const filteredData = wdata.filter((val) => {
-      // Assuming 'location_name' is the property to filter on
+     
       return val.location_name.toLowerCase().includes(inputValue.toLowerCase());
     });
 
-    // Limit the filtered data to the first 100 items
-    const limitedData = filteredData.slice(0, 10);
+   
+    const limitedData = filteredData.slice(0, 30);
 
     setData(limitedData);
   };
@@ -43,7 +43,7 @@ const Wforcast = () => {
       <Button variant="contained" onClick={handleButtonClick}>
         Search
       </Button>
-      {/* <p>You entered: {displayValue}</p> */}
+      
       {data.map((val, index) => (
         <Card
           key={index}
@@ -52,7 +52,7 @@ const Wforcast = () => {
           b={val.region}
           c={val.temperature_celsius}
           d={val.condition_text}
-          e={val.last_updated}
+        //   e={val.last_updated}
         />
       ))}
       <div>
