@@ -1,10 +1,13 @@
 import Navbar from "../pages/Navbar";
 import abt from "../css/About.module.css";
+import "../globals.css";
+import Footer from "../pages/Footer";
 const page = () => {
   return (
     <>
       <Navbar />
-      <div className={abt.abt}>
+      <div className="all">
+        {/* <div className={abt.abt}> */}
         <h1>Revolutionizing Agriculture with AI-powered Insights</h1>
         <br />
         <p>
@@ -14,18 +17,17 @@ const page = () => {
           transforming the lives of farmers through innovative AI-based tools.
           This about page delves into the essence of our project, the
           methodologies we employ, and the potential impact on the agricultural
-          landscape.
-        
-          In the vast expanse of agriculture, where the unpredictable dance of
-          nature and market dynamics significantly impacts the livelihoods of
-          farmers, our project emerges as a beacon of hope. Titled "Agro-based
-          Tool for Farmers with Artificial Intelligence in Statistical Data,"
-          our initiative aims to bridge the gap between traditional farming
-          practices and cutting-edge technology. Our team, spearheaded by Sonu
-          Kumar, brings together a diverse set of skills and a shared passion
-          for leveraging artificial intelligence in the agricultural sector. As
-          we embark on this journey, we recognize the challenges faced by
-          farmers and the potential of AI to revolutionize their practices.
+          landscape. In the vast expanse of agriculture, where the unpredictable
+          dance of nature and market dynamics significantly impacts the
+          livelihoods of farmers, our project emerges as a beacon of hope.
+          Titled "Agro-based Tool for Farmers with Artificial Intelligence in
+          Statistical Data," our initiative aims to bridge the gap between
+          traditional farming practices and cutting-edge technology. Our team,
+          spearheaded by Sonu Kumar, brings together a diverse set of skills and
+          a shared passion for leveraging artificial intelligence in the
+          agricultural sector. As we embark on this journey, we recognize the
+          challenges faced by farmers and the potential of AI to revolutionize
+          their practices.
         </p>
         <br />
         <h2>Nurturing Growth with Statistical Insights</h2>
@@ -69,11 +71,9 @@ const page = () => {
           goals, stating, "By addressing challenges such as data accuracy and
           accessibility, we are laying the foundation for a more resilient and
           technologically empowered farming community."
-       </p>
-       <br />
-        <h2>
-         Paving the Way for Agricultural Advancements
-        </h2>
+        </p>
+        <br />
+        <h2>Paving the Way for Agricultural Advancements</h2>
         <br />
         <p>
           Our approach to revolutionizing agriculture through AI is systematic
@@ -99,9 +99,7 @@ const page = () => {
           <br />
         </p>
         <br />
-        <h2>
-         Empowering Agriculture with Comprehensive Data
-        </h2>
+        <h2>Empowering Agriculture with Comprehensive Data</h2>
         <br />
         <p>
           The success of our AI-powered tools hinges on the availability of
@@ -160,6 +158,7 @@ const page = () => {
           it more sustainable, resilient, and prosperous.
         </p>
       </div>
+      <Footer/>
     </>
   );
 };

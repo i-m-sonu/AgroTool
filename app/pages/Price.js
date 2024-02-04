@@ -19,9 +19,9 @@ const Price = () => {
     }
   };
 
-  //   useEffect(() => {
-  //     fetchData();
-  //   }, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -56,33 +56,50 @@ const Price = () => {
     (a, b) => parseFloat(b.Yield) - parseFloat(a.Yield)
   );
 
-  const top3Data = sortedData.slice(0, 8);
+  const top3Data = sortedData.slice(0, 9);
 
   return (
     <>
-    <div className="input">
-   
-      <TextField label="Outlined" variant="outlined" value={inputValue} onChange={handleInputChange} />
-
-      <Button variant="contained" onClick={handleButtonClick}>
-        Search
-      </Button>
-    </div>
-      <div className="card">
-        {displayValue &&
-          top3Data.map((item, index) => (
+      <div className="all">
+        <h1>Most suitable Crop,</h1>
+        <div className="search">
+          <div className="input">
+            <TextField
+              label="Enter Commodity"
+              variant="outlined"
+              value={inputValue}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="btn">
+            <Button variant="contained" onClick={handleButtonClick}>
+              Search
+            </Button>
+          </div>
+        </div>
+        <h2 className="centre">Top 9 most profitable crops</h2>
+        <div className="card">
+          {top3Data.map((item, index) => (
             <Card
               key={index}
-              m={index + 1}
+              // m={index + 1}
+              loc="State: "
               a={item.State}
+              temp={"District: "}
               b={item.District}
+              weather={"Crop: "}
               c={item.Crop}
+              season={"Season: "}
               e={item.Season}
-              f={item.Area}
+              // area={"Area: "}
+              // f={item.Area}
+              pro={"Production: "}
               g={item.Production}
+              yield={"Yield: "}
               h={item.Yield}
             />
           ))}
+        </div>
       </div>
     </>
   );

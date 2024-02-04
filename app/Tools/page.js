@@ -1,6 +1,12 @@
 import Navbar from "../pages/Navbar";
 import tool from "../css/tools.module.css";
 import { Button } from "@mui/material";
+import Image from "next/image";
+import crop from "../../public/images/original_BYJ-BGPC-21-JUNIOR-GEO-Q013_1.jpg";
+import profit from "../../public/images/taro-pumps-cash-crops-2.jpg";
+import weather from "../../public/images/360_F_458536967_Zd72cRsHPlQKTvZbbw8wlncqqIaeFdO7.jpg";
+import Link from "next/link";
+import Footer from "../pages/Footer";
 const page = () => {
   return (
     <>
@@ -9,8 +15,13 @@ const page = () => {
         <h1 className={tool.head}>
           Welcome to <span className={tool.strong}>Tools page</span>,
         </h1>
-        <h1><u>Most suitable Crop</u></h1>
+        <h1>
+          <u>Most suitable Crop</u>
+        </h1>
         <br />
+        <Link href="/Crop">
+          <Image className={tool.img} src={crop} />
+        </Link>
         <p>
           Discovering the most suitable crop for a particular region is made
           effortless through our integrated data feature. Leveraging
@@ -26,12 +37,25 @@ const page = () => {
         </p>
         <br />
         <div className={tool.flex}>
-          <h3><u>Check most profitable crop of your region</u></h3>
-          <Button className={tool.btn} variant="contained">Click Here</Button>
+          <h3>
+            <u>Check most profitable crop of your region</u>
+          </h3>
+          <Link href="/Crop">
+            <Button className={tool.btn} variant="contained">
+              Click Here
+            </Button>
+          </Link>
         </div>
         <br />
         <br />
-        <h1><u>Crop with maximum profits</u></h1><br />
+        <h1>
+          <u>Crop with maximum profits</u>
+        </h1>
+        <br />
+        <Link href="/Price">
+          <Image className={tool.img} src={profit} />
+        </Link>
+
         <p>
           Unlock the potential for maximum profitability in your agriculture
           endeavors with our innovative feature that identifies the most
@@ -47,12 +71,25 @@ const page = () => {
         </p>
         <br />
         <div className={tool.flex}>
-          <h3><u>To Check the price comparison of crop</u></h3>
+          <h3>
+            <u>To Check the price comparison of crop</u>
+          </h3>
           <br />
-          <Button className={tool.btn} variant="contained">Click Here</Button>  </div><br />
-          <h1><u>Weather forcast</u></h1>
-          <br />
-      
+          <Link href="/Price">
+            <Button className={tool.btn} variant="contained">
+              Click Here
+            </Button>
+          </Link>
+        </div>
+        <br />
+        <h1>
+          <u>Weather forcast</u>
+        </h1>
+        <br />
+        <Link href="/Weather">
+          <Image className={tool.img} src={weather} />
+        </Link>
+
         <p>
           Stay one step ahead of the elements with our cutting-edge weather
           feature, offering real-time forecasts and daily updates. Seamlessly
@@ -65,12 +102,20 @@ const page = () => {
           decisions. Embrace the convenience of staying weather-ready and
           informed, ensuring you're prepared for whatever nature has in store.
           Welcome a new era of weather intelligence.
-        </p><br />
+        </p>
+        <br />
         <div className={tool.flex}>
-          <h3><u>To Check weather condition or weather forcast</u></h3>
-          <Button className={tool.btn} variant="contained">Click Here</Button>
+          <h3>
+            <u>To Check weather condition or weather forcast</u>
+          </h3>
+          <Link href="/Weather">
+            <Button className={tool.btn} variant="contained">
+              Click Here
+            </Button>
+          </Link>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

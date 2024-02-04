@@ -3,6 +3,7 @@ import img from "../../public/images/iot-in-agriculture.jpg";
 import { Button } from "@mui/material";
 import Link from "next/link";
 import home from "../css/homepage.module.css";
+import Footer from "./Footer";
 
 const Homepage = () => {
   return (
@@ -35,6 +36,7 @@ const Homepage = () => {
           </Button>
         </div>
       </div>
+        <Footer/>
     </>
   );
 };
