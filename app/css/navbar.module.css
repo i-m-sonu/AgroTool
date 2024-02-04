@@ -1,5 +1,5 @@
 .head {
-   
+
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-content: space-between;
@@ -7,11 +7,16 @@
     box-shadow: 4px 5px 5px grey;
     padding-right: 20px;
     margin: 0%;
-    background: black;
+    background: rgb(42, 88, 35);
+}
+
+.rm {
+
+    text-decoration: none;
 }
 
 .nav {
-    
+
     margin: 1px;
     padding: 1px;
     grid-column: 4/6;
@@ -19,6 +24,7 @@
     color: white;
     margin-right: 45px;
     font-size: larger;
+    text-decoration: none;
 
 }
 
@@ -26,6 +32,7 @@
 .nav :link {
     padding: 10px;
     margin-right: 25px;
+    text-decoration: none;
 
 
 }
@@ -47,12 +54,14 @@
     color: rgba(233, 227, 227, 0.905);
     transition: .1s;
     transform: scale(1.25);
+    text-decoration: none;
 
 }
 
 .nav :hover {
     color: rgb(255, 255, 255);
     transform: scale(1.25);
+    text-decoration: none;
 
 }
 
@@ -60,12 +69,14 @@
     grid-column: 6/7;
     float: left;
     display: flex;
+    text-decoration: none;
 }
 
 .link div {
 
     padding: 10px;
     margin: 10px;
+    text-decoration: none;
 
 }
 
@@ -75,7 +86,7 @@
 
 @media only screen and (max-width:600px) {
 
-   
+
     .head h3 {
         margin-left: 5px;
         font-size: larger;

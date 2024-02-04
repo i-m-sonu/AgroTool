@@ -2,3 +2,15 @@
   margin: 0%;
   padding: 0%;
 }
+
+.card {
+  /* background: linear-gradient(to bottom right, #159ce4b9,#134fdca2, #9c16df); */
+  display: grid;
+  /* flex-direction: row; */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  padding: 20px;
+  user-select: none;
+
+
+
+}

@@ -5,7 +5,7 @@ import file from "../../public/data/weather.json";
 import Card from "./Card";
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
-
+import "../../app/globals.css";
 const Price = () => {
   const [inputValue, setInputValue] = useState("Chandigarh");
   const [displayValue, setDisplayValue] = useState("Chandigarh");
@@ -56,30 +56,34 @@ const Price = () => {
     (a, b) => parseFloat(b.Yield) - parseFloat(a.Yield)
   );
 
-  const top3Data = sortedData.slice(0, 6);
+  const top3Data = sortedData.slice(0, 8);
 
   return (
     <>
-      <TextField value={inputValue} onChange={handleInputChange} />
+    <div className="input">
+   
+      <TextField label="Outlined" variant="outlined" value={inputValue} onChange={handleInputChange} />
 
       <Button variant="contained" onClick={handleButtonClick}>
         Search
       </Button>
-
-      {displayValue &&
-        top3Data.map((item, index) => (
-          <Card
-            key={index}
-            m={index + 1}
-            a={item.State}
-            b={item.District}
-            c={item.Crop}
-            e={item.Season}
-            f={item.Area}
-            g={item.Production}
-            h={item.Yield}
-          />
-        ))}
+    </div>
+      <div className="card">
+        {displayValue &&
+          top3Data.map((item, index) => (
+            <Card
+              key={index}
+              m={index + 1}
+              a={item.State}
+              b={item.District}
+              c={item.Crop}
+              e={item.Season}
+              f={item.Area}
+              g={item.Production}
+              h={item.Yield}
+            />
+          ))}
+      </div>
     </>
   );
 };

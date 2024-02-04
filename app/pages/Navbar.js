@@ -8,15 +8,23 @@ const Navbar = () => {
       <div className={head.head}>
         <h3>AgroTool</h3>
         <div className={head.nav}>
-          <Link href="/">
+          <Link className={head.rm} href="/">
             <strong className={head.res}>Home</strong>
           </Link>
-
-        
-          <Link href="/Tools">
+          <Link className={head.rm} href="/Tools">
             <strong className={head.res}>Tools</strong>
           </Link>
-          <Link href="/About">
+        
+          <Link className={head.rm} href="/Crop">
+            <strong className={head.res}>Crop</strong>
+          </Link>
+          <Link className={head.rm} href="/Price">
+            <strong className={head.res}>Price</strong>
+          </Link>
+          <Link className={head.rm} href="/Weather"> 
+          <strong className={head.res}>Weather</strong>
+          </Link>
+          <Link className={head.rm} href="/About">
             <strong className={head.res}>About</strong>
           </Link>
       

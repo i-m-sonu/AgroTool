@@ -1,0 +1,32 @@
+.bg {
+  background: linear-gradient(to left, rgba(245, 222, 179, 0.646), rgba(245, 222, 179, 0.664)), url("../../public/images/globalagriculture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.head {
+
+  color: rgb(250, 112, 37);
+  font-size: 50px;
+}
+
+.strong {
+  font-family: fantasy;
+  color: rgb(255, 64, 0);
+  font-size: 75px;
+
+}
+.bg{
+  text-align: justify;
+}
+.flex{
+  
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+}
+.btn{
+  margin-left: 20px;
+}
