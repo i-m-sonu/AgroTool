@@ -30,15 +30,15 @@ const Homepage = () => {
             optimize resource usage, and navigate market uncertainties."
           </p>
           <br />
-          <Button className={home.link} variant="outlined">
+          <Button className={home.link} variant="contained">
             <Link className={home.link} href="/Tools">
               <strong>Explore Tools</strong>
             </Link>
           </Button>
         </div>
       </div>
-      <Tools/>
-        <Footer/>
+      <Tools />
+      <Footer />
     </>
   );
 };
