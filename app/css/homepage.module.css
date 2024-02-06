@@ -31,12 +31,13 @@
 }
 @media screen and (max-width: 600px) {
     .img{
-        width: 300px;
+        width: 80%;
         overflow: hidden;
         justify-content: center;
         align-items: center;
         text-align: center;
-
+        /* padding: 20px; */
+        margin: 40px;
     }
     .all{
         display: flex;

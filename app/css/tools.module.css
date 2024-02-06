@@ -36,6 +36,20 @@
   margin-left: 20px;
 }
 .img{
-  height: 250px;
-  width: 350px;
+  height: auto;
+  width: 30%;
+  
+}
+@media screen and (max-width: 600px)  {
+
+
+  .img{
+    height: auto;
+    width: 100%;
+    
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+  }
 }
