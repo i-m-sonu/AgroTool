@@ -3,6 +3,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    background-attachment: fixed;
+    overflow: hidden;
+
     /* flex-direction: row; */
 }
 .img{
@@ -25,4 +28,19 @@
 .link{
 
     text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+    .img{
+        width: 300px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .all{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
 }

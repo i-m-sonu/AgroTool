@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px;
+  background-attachment: fixed;
+}
+.bga{
+  background: linear-gradient(to left, rgba(245, 222, 179, 0.646), rgba(245, 222, 179, 0.664))
+
 }
 
 .head {

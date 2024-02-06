@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import Link from "next/link";
 import home from "../css/homepage.module.css";
 import Footer from "./Footer";
+import Tools from "./Tools";
 
 const Homepage = () => {
   return (
@@ -36,6 +37,7 @@ const Homepage = () => {
           </Button>
         </div>
       </div>
+      <Tools/>
         <Footer/>
     </>
   );

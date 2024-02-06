@@ -14,16 +14,18 @@
 
 
 }
-.all{
-background-attachment: fixed;
- background: linear-gradient(to left, rgba(245, 222, 179, 0.646), rgba(245, 222, 179, 0.664)), url("../public/images/globalagriculture.jpg");
+
+.all {
+  background-attachment: fixed;
+  background: linear-gradient(to left, rgba(245, 222, 179, 0.646), rgba(245, 222, 179, 0.664)), url("../public/images/globalagriculture.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 30px;
   /* margin: 30px; */
 }
-.search{
+
+.search {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,14 +34,176 @@ background-attachment: fixed;
   margin: 15px 20px;
   /* padding: 20px; */
 }
-.btn{
+
+.btn {
   margin: 10px;
 }
 
-.centre{
+.centre {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: rgba(254, 136, 33, 0.893);
+  /* color: rgba(254, 136, 33, 0.893); */
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  padding-top: 5px;
+  background-color: #1d732a;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.862);
+  /* position: fixed;
+   */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #1d732a;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  /* border-right: 1px solid #f4f4f4; */
+  text-decoration: none;
+  color: white;
+  font-size: large;
+
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  /* background-color: #f4f4f4; */
+  /* width: 50%;
+  border-radius: 20px; */
+  transform: scale(1.1);
+  font-weight: bolder;
+  color: white;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  font-family: fantasy;
+  font-weight: bolder;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+  /* color: aliceblue; */
+}
+
+.header .menu-btn:checked~.menu {
+  max-height: 500px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+
+  .header li a {
+    padding: 20px 30px;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+    
+  }
 }

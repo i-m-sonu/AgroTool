@@ -1,36 +1,25 @@
 import Link from "next/link";
-import head from "../css/navbar.module.css";
+// import head from "../css/navbar.module.css";
+import "../globals.css";
 
 
 const Navbar = () => {
   return (
     <>
-      <div className={head.head}>
-        <h3>AgroTool</h3>
-        <div className={head.nav}>
-          <Link className={head.rm} href="/">
-            <strong className={head.res}>Home</strong>
-          </Link>
-          <Link className={head.rm} href="/Tools">
-            <strong className={head.res}>Tools</strong>
-          </Link>
-        
-          <Link className={head.rm} href="/Crop">
-            <strong className={head.res}>Crop</strong>
-          </Link>
-          <Link className={head.rm} href="/Price">
-            <strong className={head.res}>Price</strong>
-          </Link>
-          <Link className={head.rm} href="/Weather"> 
-          <strong className={head.res}>Weather</strong>
-          </Link>
-          <Link className={head.rm} href="/About">
-            <strong className={head.res}>About</strong>
-          </Link>
-      
-        </div>
-       
-      </div>
+     <header class="header">
+        <a href="" class="logo">AgroTool</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/Tools">Tools</Link></li>
+          <li><Link href="/Crop">Crop</Link></li>
+          <li><Link href="/Price">Price</Link></li>
+          <li><Link href="/Weather">Weather</Link></li>
+          <li><Link href="/About">About</Link></li>
+          
+        </ul>
+    </header>
     </>
   );
 };
