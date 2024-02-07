@@ -12,10 +12,15 @@
   /* text-align: center; */
   background: linear-gradient(to right, rgba(255, 255, 255, 0.733), rgba(245, 240, 150, 0.37));
   box-shadow: 2px 1px 10px rgb(96, 93, 37);
-  padding-left: 70px;
+  padding-left: 35px;
   background-repeat: no-repeat;
   background-size: cover;
   transition: .3s;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+  width: 80%;
+  overflow: hidden;
 }
 
 /* .bold {

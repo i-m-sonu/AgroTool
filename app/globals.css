@@ -12,6 +12,7 @@
   padding: 20px;
   user-select: none;
 
+  justify-content: center;
 
 
 }
@@ -24,6 +25,8 @@
   background-size: cover;
   padding: 30px;
   /* margin: 30px; */
+  overflow: hidden;
+
 }
 
 .search {
