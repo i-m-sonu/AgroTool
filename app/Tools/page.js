@@ -40,11 +40,11 @@ const page = () => {
           <h3>
             <u>Check most profitable crop of your region</u>
           </h3>
-          <Link href="/Crop">
+          <a href="/Crop">
             <Button className={tool.btn} variant="contained">
               Click Here
             </Button>
-          </Link>
+          </a>
         </div>
         <br />
         <br />
@@ -75,11 +75,11 @@ const page = () => {
             <u>To Check the price comparison of crop</u>
           </h3>
           <br />
-          <Link href="/Price">
+          <a href="/Price">
             <Button className={tool.btn} variant="contained">
               Click Here
             </Button>
-          </Link>
+          </a>
         </div>
         <br />
         <h1>
@@ -108,11 +108,11 @@ const page = () => {
           <h3>
             <u>To Check weather condition or weather forcast</u>
           </h3>
-          <Link href="/Weather">
+          <a href="/Weather">
             <Button className={tool.btn} variant="contained">
               Click Here
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
       <Footer/>

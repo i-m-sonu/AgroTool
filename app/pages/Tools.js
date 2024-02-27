@@ -17,9 +17,9 @@ const Tools = () => {
           <u>Most suitable Crop</u>
         </h1>
         <br />
-        <Link href="/Crop">
+        <a href="/Crop">
           <Image className={tool.img} src={crop} />
-        </Link>
+        </a>
         <p>
           Discovering the most suitable crop for a particular region is made
           effortless through our integrated data feature. Leveraging
@@ -38,11 +38,11 @@ const Tools = () => {
           <h3>
             <u>Check most profitable crop of your region</u>
           </h3>
-          <Link href="/Crop">
+          <a href="/Crop">
             <Button className={tool.btn} variant="contained">
               Click Here
             </Button>
-          </Link>
+          </a>
         </div>
         <br />
         <br />
@@ -50,9 +50,9 @@ const Tools = () => {
           <u>Crop with maximum profits</u>
         </h1>
         <br />
-        <Link href="/Price">
+        <a href="/Price">
           <Image className={tool.img} src={profit} />
-        </Link>
+        </a>
 
         <p>
           Unlock the potential for maximum profitability in your agriculture
@@ -73,20 +73,20 @@ const Tools = () => {
             <u>To Check the price comparison of crop</u>
           </h3>
           <br />
-          <Link href="/Price">
+          <a href="/Price">
             <Button className={tool.btn} variant="contained">
               Click Here
             </Button>
-          </Link>
+          </a>
         </div>
         <br />
         <h1>
           <u>Weather forcast</u>
         </h1>
         <br />
-        <Link href="/Weather">
+        <a href="/Weather">
           <Image className={tool.img} src={weather} />
-        </Link>
+        </a>
 
         <p>
           Stay one step ahead of the elements with our cutting-edge weather
@@ -106,11 +106,11 @@ const Tools = () => {
           <h3>
             <u>To Check weather condition or weather forcast</u>
           </h3>
-          <Link href="/Weather">
+          <a href="/Weather">
             <Button className={tool.btn} variant="contained">
               Click Here
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     
