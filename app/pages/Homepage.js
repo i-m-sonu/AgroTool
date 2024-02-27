@@ -31,9 +31,9 @@ const Homepage = () => {
           </p>
           <br />
           <Button className={home.link} variant="contained">
-            <Link className={home.link} href="/Tools">
+            <a className={home.link} href="/Tools">
               <strong>Explore Tools</strong>
-            </Link>
+            </a>
           </Button>
         </div>
       </div>
